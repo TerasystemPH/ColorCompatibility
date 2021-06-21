@@ -7,7 +7,7 @@ public class ColorCompatibility: NSObject {
         if #available(iOS 13, *) {
             return .label
         }
-        return UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 1.0)
+		return .black
     }
     @objc(secondaryLabelColor)
     public static var secondaryLabel: UIColor {
@@ -70,7 +70,7 @@ public class ColorCompatibility: NSObject {
         if #available(iOS 13, *) {
             return .systemBackground
         }
-        return UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+		return .white
     }
     @objc(secondarySystemBackgroundColor)
     public static var secondarySystemBackground: UIColor {
@@ -91,14 +91,14 @@ public class ColorCompatibility: NSObject {
         if #available(iOS 13, *) {
             return .systemGroupedBackground
         }
-        return UIColor(red: 0.9490196078431372, green: 0.9490196078431372, blue: 0.9686274509803922, alpha: 1.0)
+		return .groupTableViewBackground
     }
     @objc(secondarySystemGroupedBackgroundColor)
     public static var secondarySystemGroupedBackground: UIColor {
         if #available(iOS 13, *) {
             return .secondarySystemGroupedBackground
         }
-        return UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+		return .white
     }
     @objc(tertiarySystemGroupedBackgroundColor)
     public static var tertiarySystemGroupedBackground: UIColor {
